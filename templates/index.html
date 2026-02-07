@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Love World</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<!-- SCREEN 1 -->
+<div id="portalScreen">
+  <div class="portal"></div>
+
+  <div class="portalText">
+    <h1>Prashant, I made something special for you ❤️</h1>
+    <p>Are you ready to enter my Love World?</p>
+    <button onclick="enterWorld()">Enter Love World 💖</button>
+  </div>
+</div>
+
+<!-- SCREEN 2 -->
+<div id="dateScreen" class="hidden">
+  <h2>Select Today's Date 💝</h2>
+
+  <div class="dates">
+    <button onclick="selectDate(7)">7 Feb</button>
+    <button onclick="selectDate(8)">8 Feb</button>
+    <button onclick="selectDate(9)">9 Feb</button>
+    <button onclick="selectDate(10)">10 Feb</button>
+    <button onclick="selectDate(11)">11 Feb</button>
+    <button onclick="selectDate(12)">12 Feb</button>
+    <button onclick="selectDate(13)">13 Feb</button>
+    <button onclick="selectDate(14)">14 Feb</button>
+  </div>
+</div>
+
+<!-- SCREEN 3 -->
+<div id="surpriseScreen">
+
+    <h1 id="dayTitle">🧸 Happy Teddy Day</h1>
+    <p id="dayMessage">Catch the rose from me 😜</p>
+  
+    <!-- TEDDY -->
+    <div id="teddy">🧸</div>
+  
+    <!-- ROSE BUTTON -->
+    <button id="roseBtn" onclick="tryRose()">🌹 Take Rose</button>
+  
+  </div>
+  
+
+<script src="/static/script.js"></script>
+</body>
+</html>
