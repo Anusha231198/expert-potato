@@ -14,10 +14,11 @@ function enterWorld(){
   /* ---------- DATE SYSTEM ---------- */
   
   function selectDate(date){
-  
+
     let today = new Date().getDate();
   
-    if(date !== today){
+    // Block only future days
+    if(date > today){
       alert("Ruko ruko 😝 Aaj ka din pehle aane do ❤️");
       return;
     }
@@ -27,7 +28,12 @@ function enterWorld(){
   
     if(date==7) RoseGame();
     else if(date==8) ProposeGame();
-    else ValentineFinal();
+    else if(date==9) ChocolateGame();
+    else if(date==10) TeddyGame();
+    else if(date==11) PromiseGame();
+    else if(date==12) HugDay();
+    else if(date==13) KissDay();
+    else if(date==14) ValentineFinal();
   }
   
   /* ---------- ROSE DAY GAME ---------- */
