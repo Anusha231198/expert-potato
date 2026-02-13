@@ -1,158 +1,70 @@
 body{
-    margin:0;
-    height:100vh;
-    background:radial-gradient(circle,#ff5fd2,#7b2cbf,#240046);
-    overflow:hidden;
-    font-family:Arial;
-    color:white;
-    }
-    
-    /* PORTAL */
-    
-    .portal{
-    position:absolute;
-    width:120vmax;
-    height:120vmax;
-    background:conic-gradient(#ffb3ff,#ff5fd2,#b5179e,#7209b7,#560bad,#ffb3ff);
-    border-radius:50%;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    animation:spin 10s linear infinite;
-    filter:blur(2px);
-    }
-    
-    @keyframes spin{
-    to{transform:translate(-50%,-50%) rotate(360deg);}
-    }
-    
-    /* SCREENS */
-    
-    #portalScreen,#dateScreen,#surpriseScreen{
-    position:fixed;
-    width:100%;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-    }
-    
-    #dateScreen,#surpriseScreen{
-    display:none;
-    }
-    
-    /* PORTAL TEXT */
-    
-    .portalText{
-    background:rgba(0,0,0,0.5);
-    padding:40px;
-    border-radius:25px;
-    box-shadow:0 0 30px hotpink;
-    z-index:10;
-    }
-    
-    /* BUTTONS */
-    
-    button{
-    padding:12px 30px;
-    border:none;
-    border-radius:25px;
-    background:#ff5fa2;
-    color:white;
-    font-size:16px;
-    margin:10px;
-    cursor:pointer;
-    }
-    
-    /* DATES */
-    
-    .dates{
-    display:grid;
-    grid-template-columns:repeat(2,120px);
-    gap:15px;
-    }
-    
-    /* TRAVEL */
-    
-    .portal.travel{
-    animation:spinFast 1s linear infinite, zoomIn 5s ease forwards;
-    }
-    
-    @keyframes spinFast{
-    to{transform:translate(-50%,-50%) rotate(720deg);}
-    }
-    
-    @keyframes zoomIn{
-    to{scale:3;}
-    }
-    
-    .fadeOut{
-    animation:fade 5s forwards;
-    }
-    
-    @keyframes fade{
-    to{opacity:0;}
-    }
-    
-    /* HEARTS */
-    
-    .heart{
-    position:fixed;
-    bottom:-20px;
-    animation:floatUp 8s linear forwards;
-    color:#ff7acb;
-    }
-    
-    @keyframes floatUp{
-    to{transform:translateY(-110vh);opacity:0;}
-    }
-    
-    /* TEDDY */
-    
-    #teddy{
-    font-size:120px;
-    animation:bounce 2s infinite;
-    }
-    
-    @keyframes bounce{
-    50%{transform:translateY(-20px);}
-    }
-    
-    /* BURST */
-    
-    .burstHeart{
-    position:fixed;
-    font-size:30px;
-    animation:burst 3s ease forwards;
-    color:#ff4d6d;
-    }
-    
-    @keyframes burst{
-    to{
-    transform:translate(
-    calc(-200px + 400px * var(--x)),
-    calc(-200px + 400px * var(--y))
-    ) scale(2.5);
-    opacity:0;
-    }
-    }
-    
-    /* PROPOSE BUTTON */
-    
-    .choiceBtn{
-    background:#ff4d6d;
-    }
-    
-    #roseBtn{
-      position:absolute;
-      padding:12px 30px;
-      border:none;
-      border-radius:25px;
-      background:#ff4d6d;
-      color:white;
-      font-size:16px;
-      cursor:pointer;
-    }
-    
+  margin:0;
+  height:100vh;
+  background:radial-gradient(circle,#ff5fd2,#7b2cbf,#240046);
+  color:white;
+  font-family:Arial;
+}
+
+/* SCREENS */
+
+#portalScreen,#dateScreen,#surpriseScreen{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+}
+
+#dateScreen,#surpriseScreen{
+  display:none;
+}
+
+/* PORTAL */
+
+.portal{
+  position:absolute;
+  width:120vmax;
+  height:120vmax;
+  background:conic-gradient(#ffb3ff,#ff5fd2,#b5179e,#7209b7,#560bad,#ffb3ff);
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+/* TEXT BOX */
+
+.portalText{
+  background:rgba(0,0,0,0.5);
+  padding:40px;
+  border-radius:25px;
+}
+
+/* BUTTON */
+
+button{
+  padding:12px 30px;
+  border:none;
+  border-radius:25px;
+  background:#ff5fa2;
+  color:white;
+  margin:10px;
+  cursor:pointer;
+}
+
+/* DATE GRID */
+
+.dates{
+  display:grid;
+  grid-template-columns:repeat(2,120px);
+  gap:15px;
+}
+
+/* TEDDY */
+
+#teddy{
+  font-size:120px;
+}

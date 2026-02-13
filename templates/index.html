@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Love World</title>
-<link rel="stylesheet" href="/static/style.css">
+  <title>Love World</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
+<!-- PORTAL SCREEN -->
 <div id="portalScreen">
   <div class="portal"></div>
 
@@ -17,6 +18,7 @@
   </div>
 </div>
 
+<!-- DATE SCREEN -->
 <div id="dateScreen">
   <h2>Select Today's Date 💝</h2>
 
@@ -32,8 +34,10 @@
   </div>
 </div>
 
+<!-- SURPRISE SCREEN -->
 <div id="surpriseScreen"></div>
 
-<script src="/static/script.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>
